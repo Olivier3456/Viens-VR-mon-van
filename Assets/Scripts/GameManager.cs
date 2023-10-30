@@ -44,9 +44,7 @@ public class GameManager : MonoBehaviour
 
             if (timer >= maxTimeToCatchNextChild)
             {
-                gameState = GameState.GameOver;
-
-                gameOverMenu.Show(score, "Out of time");
+                EndGame("Out of time");
                 //OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
             }
         }
@@ -60,11 +58,37 @@ public class GameManager : MonoBehaviour
         //OnChildCaught?.Invoke(this, EventArgs.Empty);
     }
 
-    public void StartGame()
+    public void PlayerCaughtByPolice()
     {
-        gameState = GameState.Playing;
-        timer = 0;
+
+    }
+
+    private void StartGame()
+    {
+        if (gameState != GameState.Playing)
+        {
+            gameState = GameState.Playing;
+            timer = 0;
+        }
         //OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
+    }
+
+    private void EndGame(string causeOfGameOver)
+    {
+        gameState = GameState.GameOver;
+        gameOverMenu.Show(score, causeOfGameOver);
+    }
+
+    public void TogglePauseGame()
+    {
+        if (gameState == GameState.Pause)
+        {
+            gameState = GameState.Playing;
+        }
+        else
+        {
+            gameState = GameState.Pause;
+        }
     }
 
 
