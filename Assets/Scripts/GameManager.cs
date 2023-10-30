@@ -9,47 +9,46 @@ public class GameManager : MonoBehaviour
 
     private GameState gameState;
 
-    public static GameManager instance;
-
     [SerializeField] private float maxTimeToCatchNextChild = 60f;
     [SerializeField] private float timeReductionFactorBetweenTwoChildrenCaught = 0.075f;
+    [SerializeField] private TimerVisual timerVisual;
+    [SerializeField] private GameOverMenu gameOverMenu;
+
     private float timer;
 
-    private float score = 0;
+    private int score = 0;
 
 
-    public class OnGameStateChangedEventArgs : EventArgs
+    //public class OnGameStateChangedEventArgs : EventArgs
+    //{
+    //    public GameState newState;
+    //}
+    //public event EventHandler<OnGameStateChangedEventArgs> OnGameStateChanged;
+
+    //public event EventHandler OnChildCaught;
+
+
+
+    private void Start()
     {
-        public GameState newState;
-    }
-    public event EventHandler<OnGameStateChangedEventArgs> OnGameStateChanged;
-
-    public event EventHandler OnChildCaught;
-
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        StartGame();
     }
 
     private void Update()
     {
         if (gameState == GameState.Playing)
         {
-            timer -= Time.deltaTime;
-        }
+            timer += Time.deltaTime;
 
-        if (timer <= 0)
-        {
-            gameState = GameState.GameOver;
-            OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
+            timerVisual.UpdateVolumeValues(GetNormalizedTimeLeft());
+
+            if (timer >= maxTimeToCatchNextChild)
+            {
+                gameState = GameState.GameOver;
+
+                gameOverMenu.Show(score, "Out of time");
+                //OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
+            }
         }
     }
 
@@ -58,19 +57,29 @@ public class GameManager : MonoBehaviour
     {
         score++;
         maxTimeToCatchNextChild -= maxTimeToCatchNextChild * timeReductionFactorBetweenTwoChildrenCaught;
-        OnChildCaught?.Invoke(this, EventArgs.Empty);
+        //OnChildCaught?.Invoke(this, EventArgs.Empty);
     }
 
     public void StartGame()
     {
         gameState = GameState.Playing;
-        timer = maxTimeToCatchNextChild;
-        OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
+        timer = 0;
+        //OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
     }
 
 
     public GameState GetGameState()
     {
         return gameState;
+    }
+
+    private float GetNormalizedTimeLeft()
+    {
+        return timer / maxTimeToCatchNextChild;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }
