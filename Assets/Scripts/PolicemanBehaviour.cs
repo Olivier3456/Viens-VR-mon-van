@@ -16,7 +16,7 @@ public class PolicemanBehaviour : AIBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Child"))
         {
@@ -24,4 +24,5 @@ public class PolicemanBehaviour : AIBehaviour
             _animator.SetTrigger("Walking");
         }
     }
+    
 }
