@@ -10,6 +10,10 @@ public abstract class AIBehaviour : MonoBehaviour
     protected Animator _animator;
     [SerializeField]
     protected NavMeshAgent _agent;
+    [SerializeField] 
+    protected AudioSource _audioSource;
+    [SerializeField]
+    protected AudioClip[] _audioClips;
     [SerializeField]
     protected float sightRadius;
     [SerializeField]
