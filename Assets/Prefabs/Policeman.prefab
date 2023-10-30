@@ -299,6 +299,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 4367433462612531347}
   _agent: {fileID: 6254686210254752023}
+  _audioSource: {fileID: 957700015633022339}
+  _audioClips:
+  - {fileID: 8300000, guid: fecb98e4664ed9c4dbca30ce0d261603, type: 3}
   sightRadius: 5
   sightAngle: 120
   walkingSpeed: 5
@@ -358,7 +361,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

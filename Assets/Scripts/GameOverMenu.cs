@@ -15,14 +15,10 @@ public class GameOverMenu : MonoBehaviour
     {
         causeOfGameOverText.text = causeOfGameOver;
 
-        if (score < 2)
-        {
-            scoreText.text = $"{score} child massacred";
-        }
-        else
-        {
-            scoreText.text = $"{score} children massacred";
-        }
+
+        scoreText.text = $"{score} {(score < 2 ? "child" : "children")} fed candies";
+
+
 
         background.SetActive(true);
     }

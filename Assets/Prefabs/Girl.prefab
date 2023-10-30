@@ -294,6 +294,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 3248661953820631998}
   _agent: {fileID: 2228929176463388354}
+  _audioSource: {fileID: 4356871310796479558}
+  _audioClips:
+  - {fileID: 8300000, guid: 8f30f8fd6817d7243b52bc45bc08ab9a, type: 3}
+  - {fileID: 8300000, guid: ed1aaff84637d404480fd6acf41d0448, type: 3}
+  - {fileID: 8300000, guid: d6dcbbc5b4ae3c541a4742088d05e1dc, type: 3}
+  - {fileID: 8300000, guid: 28a510898001d314aa32849b96b01d95, type: 3}
+  - {fileID: 8300000, guid: 2e66413e2a7bc1647bba569aa4904695, type: 3}
+  - {fileID: 8300000, guid: f77727682cd9d634598adcb566621b7d, type: 3}
+  - {fileID: 8300000, guid: 1ab6555641176d04caaeddde35cca90b, type: 3}
   sightRadius: 120
   sightAngle: 5
   walkingSpeed: 5
@@ -353,7 +362,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
