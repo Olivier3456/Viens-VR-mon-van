@@ -46,8 +46,10 @@ public class ChildBehaviour : AIBehaviour
                 _animator.ResetTrigger("Walking");
                 _animator.SetTrigger("Lifting");
                 _audioSource.clip = _audioClips[Random.Range(0, _audioClips.Length)];
+                other.GetComponent<Candy>().ReturnToPool();
                 _audioSource.Play();
                 _agent.isStopped = true;
+                isWalkingTowardsCandy = false;
             }
         }
     }
@@ -71,6 +73,7 @@ public class ChildBehaviour : AIBehaviour
     private void AbductChild()
     {
         //TODO make the child disappear, play the correct sounds, etc...
+        gameObject.SetActive(false);
     }
 
     public void GoBack()
