@@ -8,6 +8,7 @@ TagManager:
   - Policeman
   - Candy
   - Van
+  - CandyBucket
   layers:
   - Default
   - TransparentFX
