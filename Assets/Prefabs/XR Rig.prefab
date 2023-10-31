@@ -1435,8 +1435,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2021,6 +2030,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 03c3ae6b09f9ab941a6b90dd5d31d45d, type: 3}
   - {fileID: 8300000, guid: 09d82e813fd97ae4fb41404a2869a3e3, type: 3}
   - {fileID: 8300000, guid: 3ea15bb456595e344abe60d79e0100a2, type: 3}
+  dummyCandy: {fileID: 0}
 --- !u!1 &6378348217283341386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,8 +2583,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4

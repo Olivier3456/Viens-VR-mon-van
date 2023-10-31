@@ -24,7 +24,7 @@ public class HandsBehaviour : MonoBehaviour
     [SerializeField] private InputActionReference rightGrabAction;
     [Space(10)]
     [SerializeField] private AudioClip[] throwingCandyAudioClips;
-
+    [SerializeField] private GameObject dummyCandy;
 
     private enum HandGrabbing { Left, Right, None, Both };
     private HandGrabbing handGrabbing;
@@ -66,7 +66,6 @@ public class HandsBehaviour : MonoBehaviour
         if (handGrabbing == HandGrabbing.Left || handGrabbing == HandGrabbing.Both)
         {
             XRRayInteractor rayInteractor = leftHandRay.GetComponent<XRRayInteractor>();
-
             if (rayInteractor.rayEndTransform != null)
             {
                 Debug.Log($"A Candy throwed by left hand on {rayInteractor.rayEndTransform.name}");
@@ -74,6 +73,12 @@ public class HandsBehaviour : MonoBehaviour
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
 
                 //Candy candy = candyPool.GetCandyFromPool(candyFinalPosition);
+                rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
+                var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
+                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByLeftHand.GetCandyType());
+                dummy.transform.position = pos;
+                dummy.gameObject.SetActive(true);
+
                 candyGrabbedByLeftHand.transform.position = candyFinalPosition;
                 candyGrabbedByLeftHand.gameObject.SetActive(true);
                 candyGrabbedByLeftHand = null;
@@ -92,6 +97,7 @@ public class HandsBehaviour : MonoBehaviour
 
                 leftHandDirect.SetActive(true);
                 leftHandRay.SetActive(false);
+
             }
         }
     }
@@ -114,6 +120,13 @@ public class HandsBehaviour : MonoBehaviour
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
 
+                rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
+                var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
+
+                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByRightHand.GetCandyType());
+                dummy.transform.position = pos;
+                dummy.gameObject.SetActive(true);
+
                 candyGrabbedByRightHand.transform.position = candyFinalPosition;
                 candyGrabbedByRightHand.gameObject.SetActive(true);
                 candyGrabbedByRightHand = null;
@@ -132,6 +145,7 @@ public class HandsBehaviour : MonoBehaviour
 
                 rightHandDirect.SetActive(true);
                 rightHandRay.SetActive(false);
+                
             }
         }
     }
