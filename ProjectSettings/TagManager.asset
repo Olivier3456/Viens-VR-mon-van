@@ -7,7 +7,7 @@ TagManager:
   - Girl
   - Policeman
   - Candy
-  - CandyBucket
+  - Van
   layers:
   - Default
   - TransparentFX
@@ -15,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Environment
+  - NPC
+  - Candy
   - 
   - 
   - 

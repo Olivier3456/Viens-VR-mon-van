@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1593600485465936705}
   - component: {fileID: 1721483759280350791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Girl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,9 +65,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3758587971213510468}
   - component: {fileID: 4094998025462770754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VisionTrigger
-  m_TagString: Untagged
+  m_TagString: Girl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +116,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9070493210130169274, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8810044029689317501, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8810044029689317501, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -8715880339641762857, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8715880339641762857, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -134,17 +159,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.726
+      value: 29.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.9248028
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.746
+      value: 21.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
@@ -186,12 +211,721 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8389627584101616582, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8389627584101616582, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -8340213388661437788, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8340213388661437788, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -8263406516237255182, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8263406516237255182, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -8249697183038926046, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8249697183038926046, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -8006009767450596044, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7923033564618481566, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7923033564618481566, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -7692042926337545232, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7692042926337545232, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -7657966619581158213, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7360747449169001873, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7127366508888074596, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7127366508888074596, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -7064795494687572861, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7064795494687572861, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -6645479265763365781, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6645479265763365781, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -6370085079684087283, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6170625038081293824, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6056541330796499132, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5806788152550257517, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5806788152550257517, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5794910607439395042, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5794910607439395042, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5655746717452328654, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5655746717452328654, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5650191807785959140, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5650191807785959140, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5561550452697079657, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5303895957562771706, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5303895957562771706, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5262608032687522169, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5262608032687522169, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5195048882033904264, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5144626529806321110, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5144626529806321110, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -5127351581312217891, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5127351581312217891, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -4846950341272313937, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4846950341272313937, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -4728426434207774260, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4332706925441422008, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4129892884866487950, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4129892884866487950, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -4081909035828094452, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4081909035828094452, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -3972873905327084715, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3972873905327084715, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -3789318604983003384, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3789318604983003384, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542885339558904099, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3524042549835530866, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3524042549835530866, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -3440334862934193336, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3440334862934193336, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -3086436065929644917, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2862309775879886109, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2862309775879886109, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -2809547913052387126, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2809547913052387126, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -2628615456312729067, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2628615456312729067, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -2407518407021208817, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2407518407021208817, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -2101638874375384182, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2101638874375384182, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -2084811680363313996, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1781356600409242780, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1703473491307067327, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1200856079203341021, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1068243049784840098, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1068243049784840098, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -1052002274679375787, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1052002274679375787, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -751476226918971245, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -734155608298546650, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -734155608298546650, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -552831747908440785, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -406646728175887549, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -406646728175887549, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: -290750445479886849, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -203856693384778745, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -175100043077871850, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -175100043077871850, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171100556185337, guid: a468a237f1c6c7e419b5616b97cafaa1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 133803108595076675, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 133803108595076675, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 242348295859812525, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 242348295859812525, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 846023090082030475, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 846023090082030475, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
       propertyPath: m_Name
       value: Girl
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082271958561512970, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082271958561512970, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106074689322445726, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106074689322445726, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339101018200438765, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444018696688188065, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444018696688188065, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577844695405034397, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577844695405034397, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715566404302941441, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898355158428612036, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135921509060577837, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3614653200513675785, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948933247560734027, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974016661214395164, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063871948812142532, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063871948812142532, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404382902101169702, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404382902101169702, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441848305933595309, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549111882529890269, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4587567923251202074, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4587567923251202074, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813444182163225392, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813444182163225392, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 5116007928265904906, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5116007928265904906, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721647208242107951, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721647208242107951, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899794066123726880, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899794066123726880, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162994726621803679, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162994726621803679, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450342061532909985, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450342061532909985, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820860170448090442, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820860170448090442, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981369598409095712, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981369598409095712, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432318979800310747, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432318979800310747, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027576880567566161, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027576880567566161, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817898888258712963, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912432618954094928, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912432618954094928, guid: a468a237f1c6c7e419b5616b97cafaa1,
         type: 3}
       propertyPath: m_TagString
       value: Girl
@@ -224,6 +958,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4356871310796479558}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a468a237f1c6c7e419b5616b97cafaa1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4687235681360895879}
   m_SourcePrefab: {fileID: 100100000, guid: a468a237f1c6c7e419b5616b97cafaa1, type: 3}
 --- !u!4 &447004562730477981 stripped
 Transform:
@@ -247,7 +985,7 @@ Animator:
   m_GameObject: {fileID: 972712530553549607}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4d50a86a993e6845869a5748cd28456, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -267,7 +1005,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 972712530553549607}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.01
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -276,7 +1014,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 0.04
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -305,7 +1043,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1ab6555641176d04caaeddde35cca90b, type: 3}
   sightRadius: 120
   sightAngle: 5
-  walkingSpeed: 5
+  walkingSpeed: 3
 --- !u!82 &4356871310796479558
 AudioSource:
   m_ObjectHideFlags: 0
@@ -402,3 +1140,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &4687235681360895879
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972712530553549607}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
