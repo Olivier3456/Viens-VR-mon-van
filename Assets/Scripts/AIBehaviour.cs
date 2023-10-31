@@ -20,10 +20,11 @@ public abstract class AIBehaviour : MonoBehaviour
     protected float sightAngle;
     [SerializeField]
     protected float walkingSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _agent.speed = walkingSpeed;
     }
 
     // Update is called once per frame
