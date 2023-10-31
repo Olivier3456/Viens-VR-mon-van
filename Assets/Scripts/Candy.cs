@@ -22,7 +22,7 @@ public class Candy : MonoBehaviour
         Invoke("ReturnToPool", lifeTime);
     }
 
-    private void ReturnToPool()
+    public void ReturnToPool()
     {
         candyPool.ReturnCandyInPool(this);
     }

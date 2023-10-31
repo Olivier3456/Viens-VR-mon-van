@@ -28,7 +28,6 @@ public class PolicemanBehaviour : AIBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_agent.remainingDistance);
         if(bringingBack)
         {
             if (_agent.remainingDistance < 3)

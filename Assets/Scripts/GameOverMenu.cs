@@ -16,7 +16,7 @@ public class GameOverMenu : MonoBehaviour
         causeOfGameOverText.text = causeOfGameOver;
 
 
-        scoreText.text = $"{score} {(score < 2 ? "child" : "children")} fed candies";
+        scoreText.text = $"{score} {(score == 1 ? "child" : "children")} fed candies";
 
 
 
