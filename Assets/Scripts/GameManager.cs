@@ -19,11 +19,8 @@ public class GameManager : MonoBehaviour
     private int score = 0;
 
 
-    //public class OnGameStateChangedEventArgs : EventArgs
-    //{
-    //    public GameState newState;
-    //}
-    //public event EventHandler<OnGameStateChangedEventArgs> OnGameStateChanged;
+    public class OnGameStateChangedEventArgs : EventArgs { public GameState newState; }
+    public event EventHandler<OnGameStateChangedEventArgs> OnGameStateChanged;
 
     //public event EventHandler OnChildCaught;
 
@@ -45,7 +42,6 @@ public class GameManager : MonoBehaviour
             if (timer >= maxTimeToCatchNextChild)
             {
                 EndGame("Out of time");
-                //OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
             }
         }
     }
@@ -71,26 +67,30 @@ public class GameManager : MonoBehaviour
             gameState = GameState.Playing;
             timer = 0;
         }
-        //OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
+        OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
     }
 
     private void EndGame(string causeOfGameOver)
     {
         gameState = GameState.GameOver;
         gameOverMenu.Show(score, causeOfGameOver);
+        OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
     }
 
-    public void TogglePauseGame()
-    {
-        if (gameState == GameState.Pause)
-        {
-            gameState = GameState.Playing;
-        }
-        else if (gameState == GameState.Playing)
-        {
-            gameState = GameState.Pause;
-        }
-    }
+    // Pas de pause : la pause, c'est pour les faibles.
+    //public void TogglePauseGame()
+    //{
+    //    if (gameState == GameState.Pause)
+    //    {
+    //        gameState = GameState.Playing;
+    //    }
+    //    else if (gameState == GameState.Playing)
+    //    {
+    //        gameState = GameState.Pause;
+    //    }
+
+    //    OnGameStateChanged?.Invoke(this, new OnGameStateChangedEventArgs { newState = gameState });
+    //}
 
 
     public GameState GetGameState()
