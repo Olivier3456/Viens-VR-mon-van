@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     public void ChildCaught()
     {
         score++;
+        timer = 0;
         maxTimeToCatchNextChild -= maxTimeToCatchNextChild * timeReductionFactorBetweenTwoChildrenCaught;
         //OnChildCaught?.Invoke(this, EventArgs.Empty);
     }
@@ -85,7 +86,7 @@ public class GameManager : MonoBehaviour
         {
             gameState = GameState.Playing;
         }
-        else
+        else if (gameState == GameState.Playing)
         {
             gameState = GameState.Pause;
         }
