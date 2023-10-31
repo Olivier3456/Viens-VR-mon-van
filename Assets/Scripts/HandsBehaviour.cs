@@ -29,6 +29,9 @@ public class HandsBehaviour : MonoBehaviour
     private enum HandGrabbing { Left, Right, None, Both };
     private HandGrabbing handGrabbing;
 
+    private Candy candyGrabbedByLeftHand;
+    private Candy candyGrabbedByRightHand;
+
 
     private void Start()
     {
@@ -69,20 +72,11 @@ public class HandsBehaviour : MonoBehaviour
                 Debug.Log($"A Candy throwed by left hand on {rayInteractor.rayEndTransform.name}");
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
-                
-                Candy candy = candyPool.GetCandyFromPool(candyFinalPosition);
 
-                if (candy.GetCandyType() == Candy.CandyType.Type1)
-                {
-                    visual_leftHandWithCandy1.SetActive(true);
-                    visual_leftHandWithCandy2.SetActive(false);
-                }
-                else
-                {
-                    visual_leftHandWithCandy1.SetActive(false);
-                    visual_leftHandWithCandy2.SetActive(true);
-                }
-
+                //Candy candy = candyPool.GetCandyFromPool(candyFinalPosition);
+                candyGrabbedByLeftHand.transform.position = candyFinalPosition;
+                candyGrabbedByLeftHand.gameObject.SetActive(true);
+                candyGrabbedByLeftHand = null;
 
                 if (handGrabbing == HandGrabbing.Left)
                 {
@@ -119,18 +113,10 @@ public class HandsBehaviour : MonoBehaviour
                 Debug.Log($"A Candy throwed by right hand on {rayInteractor.rayEndTransform.name}");
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
-                Candy candy = candyPool.GetCandyFromPool(candyFinalPosition);
 
-                if (candy.GetCandyType() == Candy.CandyType.Type1)
-                {
-                    visual_rightHandWithCandy1.SetActive(true);
-                    visual_rightHandWithCandy2.SetActive(false);
-                }
-                else
-                {
-                    visual_rightHandWithCandy1.SetActive(false);
-                    visual_rightHandWithCandy2.SetActive(true);
-                }
+                candyGrabbedByRightHand.transform.position = candyFinalPosition;
+                candyGrabbedByRightHand.gameObject.SetActive(true);
+                candyGrabbedByRightHand = null;
 
                 if (handGrabbing == HandGrabbing.Right)
                 {
@@ -168,6 +154,19 @@ public class HandsBehaviour : MonoBehaviour
                 rightHandDirect.SetActive(false);
                 rightHandRay.SetActive(true);
 
+                candyGrabbedByRightHand = candyPool.GetCandyFromPool();
+
+                if (candyGrabbedByRightHand.GetCandyType() == Candy.CandyType.Type1)
+                {
+                    visual_rightHandWithCandy1.SetActive(true);
+                    visual_rightHandWithCandy2.SetActive(false);
+                }
+                else
+                {
+                    visual_rightHandWithCandy1.SetActive(false);
+                    visual_rightHandWithCandy2.SetActive(true);
+                }
+
                 if (handGrabbing == HandGrabbing.Left)
                 {
                     handGrabbing = HandGrabbing.Both;
@@ -181,6 +180,19 @@ public class HandsBehaviour : MonoBehaviour
             {
                 leftHandDirect.SetActive(false);
                 leftHandRay.SetActive(true);
+
+                candyGrabbedByLeftHand = candyPool.GetCandyFromPool();
+
+                if (candyGrabbedByLeftHand.GetCandyType() == Candy.CandyType.Type1)
+                {
+                    visual_leftHandWithCandy1.SetActive(true);
+                    visual_leftHandWithCandy2.SetActive(false);
+                }
+                else
+                {
+                    visual_leftHandWithCandy1.SetActive(false);
+                    visual_leftHandWithCandy2.SetActive(true);
+                }
 
                 if (handGrabbing == HandGrabbing.Right)
                 {

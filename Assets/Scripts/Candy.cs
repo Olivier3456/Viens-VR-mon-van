@@ -24,7 +24,7 @@ public class Candy : MonoBehaviour
 
     private void ReturnToPool()
     {
-        candyPool.AddCandyInPool(this);
+        candyPool.ReturnCandyInPool(this);
     }
 
     public CandyType GetCandyType()

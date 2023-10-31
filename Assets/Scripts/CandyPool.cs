@@ -19,37 +19,41 @@ public class CandyPool : MonoBehaviour
         {
             for (int j = 0; j < CandyPrefabs.Length; j++)
             {
-                Candy newCandy = Instantiate(CandyPrefabs[j], transform).GetComponent<Candy>();
-                newCandy.SetCandyProperties(this, candiesLifeTime);
-                newCandy.gameObject.SetActive(false);
-                waitingCandiesList.Add(newCandy);
+                CreateNewCandy(j);
             }
         }
     }
 
-    public Candy GetCandyFromPool(Vector3 newPosition)
+    private void CreateNewCandy(int index)
+    {
+        Candy newCandy = Instantiate(CandyPrefabs[index], transform).GetComponent<Candy>();
+        newCandy.SetCandyProperties(this, candiesLifeTime);
+        ReturnCandyInPool(newCandy);
+    }
+
+    public Candy GetCandyFromPool()
     {
         if (waitingCandiesList.Count > 0)
         {
             int candyIndex = Random.Range(0, waitingCandiesList.Count);
             Candy candy = waitingCandiesList[candyIndex];
             waitingCandiesList.Remove(candy);
-            candy.transform.position = newPosition;
-            candy.gameObject.SetActive(true);
+            //candy.transform.position = newPosition;
+            //candy.gameObject.SetActive(true);
             candy.RestartLifeCycle();
             return candy;
         }
         else
         {
-            Debug.Log("No more candies in pool");
-            return null;
+            CreateNewCandy(Random.Range(0, CandyPrefabs.Length));
+            return GetCandyFromPool();
         }
     }
 
-    public void AddCandyInPool(Candy candyToAdd)
+    public void ReturnCandyInPool(Candy candyToAdd)
     {
-        candyToAdd.gameObject.SetActive(false);
         candyToAdd.CancelInvoke();
+        candyToAdd.gameObject.SetActive(false);
         waitingCandiesList.Add(candyToAdd);
     }
 }
