@@ -12,6 +12,8 @@ public class HandsBehaviour : MonoBehaviour
     [SerializeField] private GameObject leftHandRay;
     [SerializeField] private GameObject rightHandDirect;
     [SerializeField] private GameObject rightHandRay;
+    [SerializeField] private GameObject leftRayForUI;
+    [SerializeField] private GameObject rightRayForUI;
     [Space(10)]
     [SerializeField] private GameObject visual_leftHandWithCandy1;
     [SerializeField] private GameObject visual_leftHandWithCandy2;
@@ -50,10 +52,12 @@ public class HandsBehaviour : MonoBehaviour
         if (e.newState != GameManager.GameState.Playing)
         {
             leftHandDirect.SetActive(false);
-            leftHandRay.SetActive(true);
+            leftHandRay.SetActive(false);
+            leftRayForUI.SetActive(true);
 
             rightHandDirect.SetActive(false);
-            rightHandRay.SetActive(true);
+            rightHandRay.SetActive(false);
+            rightRayForUI.SetActive(true);
         }
     }
 
@@ -74,7 +78,6 @@ public class HandsBehaviour : MonoBehaviour
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
 
-                //Candy candy = candyPool.GetCandyFromPool(candyFinalPosition);
                 candyGrabbedByLeftHand.transform.position = candyFinalPosition;
                 candyGrabbedByLeftHand.gameObject.SetActive(true);
                 candyGrabbedByLeftHand = null;
@@ -129,7 +132,8 @@ public class HandsBehaviour : MonoBehaviour
                 }
 
                 int randomIndex = Random.Range(0, throwingCandyAudioClips.Length);
-                AudioSource.PlayClipAtPoint(throwingCandyAudioClips[randomIndex], rayInteractor.transform.position);
+                float soundVolume = 0.5f;
+                AudioSource.PlayClipAtPoint(throwingCandyAudioClips[randomIndex], rayInteractor.transform.position, soundVolume);
 
                 rightHandDirect.SetActive(true);
                 rightHandRay.SetActive(false);

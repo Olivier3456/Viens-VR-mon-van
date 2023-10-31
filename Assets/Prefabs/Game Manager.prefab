@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a22be584f951d439df054a9bdb2ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimeToCatchNextChild: 20
+  maxTimeToCatchNextChild: 60
   timeReductionFactorBetweenTwoChildrenCaught: 0.075
   timerVisual: {fileID: 0}
   gameOverMenu: {fileID: 0}
