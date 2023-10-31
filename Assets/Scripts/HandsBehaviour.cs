@@ -23,6 +23,7 @@ public class HandsBehaviour : MonoBehaviour
     [SerializeField] private InputActionReference leftGrabAction;
     [SerializeField] private InputActionReference rightGrabAction;
     [Space(10)]
+    [SerializeField] private AudioClip[] grabbingCandyAudioClips;
     [SerializeField] private AudioClip[] throwingCandyAudioClips;
 
 
@@ -148,6 +149,9 @@ public class HandsBehaviour : MonoBehaviour
         if (args.interactableObject.transform.CompareTag("CandyBucket"))
         {
             Debug.Log($"A Candy grabbed by {args.interactableObject.transform}");
+
+            int soundToPlayIndex = Random.Range(0, grabbingCandyAudioClips.Length);
+            AudioSource.PlayClipAtPoint(grabbingCandyAudioClips[soundToPlayIndex], args.interactableObject.transform.position);
 
             if (args.interactorObject.transform.name.Contains("Right"))
             {

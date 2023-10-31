@@ -37,9 +37,7 @@ public class CandyPool : MonoBehaviour
         {
             int candyIndex = Random.Range(0, waitingCandiesList.Count);
             Candy candy = waitingCandiesList[candyIndex];
-            waitingCandiesList.Remove(candy);
-            //candy.transform.position = newPosition;
-            //candy.gameObject.SetActive(true);
+            waitingCandiesList.Remove(candy);           
             candy.RestartLifeCycle();
             return candy;
         }
