@@ -26,30 +26,32 @@ public class ChildBehaviour : AIBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (!isWalkingTowardsCandy)
+        if (other.CompareTag("Candy"))
         {
-            if (other.CompareTag("Candy"))
+            if (!isWalkingTowardsCandy)
             {
+
                 _agent.destination = other.transform.position;
                 _agent.isStopped = false;
                 _animator.ResetTrigger("Idle");
                 _animator.ResetTrigger("Lifting");
                 _animator.SetTrigger("Walking");
                 isWalkingTowardsCandy = true;
+
             }
-        }
-        else
-        {
-            if(_agent.remainingDistance <= 0.7) 
+            else
             {
-                _animator.ResetTrigger("Idle");
-                _animator.ResetTrigger("Walking");
-                _animator.SetTrigger("Lifting");
-                _audioSource.clip = _audioClips[Random.Range(0, _audioClips.Length)];
-                other.GetComponent<Candy>().ReturnToPool();
-                _audioSource.Play();
-                _agent.isStopped = true;
-                isWalkingTowardsCandy = false;
+                if (_agent.remainingDistance <= 0.7)
+                {
+                    _animator.ResetTrigger("Idle");
+                    _animator.ResetTrigger("Walking");
+                    _animator.SetTrigger("Lifting");
+                    _audioSource.clip = _audioClips[Random.Range(0, _audioClips.Length)];
+                    other.GetComponent<Candy>().ReturnToPool();
+                    _audioSource.Play();
+                    _agent.isStopped = true;
+                    isWalkingTowardsCandy = false;
+                }
             }
         }
     }
