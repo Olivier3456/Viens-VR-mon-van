@@ -3644,7 +3644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c53e51a5f82d434d9129f48beda9440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 2132365604}
 --- !u!1 &317507869
 GameObject:
   m_ObjectHideFlags: 0
@@ -16830,6 +16830,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129203603}
   m_Mesh: {fileID: 7417228293762092779, guid: 46dd02cdbb1cc584b9cf218a2ddf62a5, type: 3}
+--- !u!114 &2132365604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2508801716893800982, guid: fa5207c2b20dd264ca1600c62174dfc7,
+    type: 3}
+  m_PrefabInstance: {fileID: 450006778}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a22be584f951d439df054a9bdb2ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2133272378
 GameObject:
   m_ObjectHideFlags: 0
