@@ -22,6 +22,7 @@ public class ChildBehaviour : AIBehaviour
         if(isWalkingHome && Vector3.Distance(_agent.destination, transform.position) < 0.5) //_agent.remainingDistance < 0.5) _agent.remainingDistance is not calculated yet in the next frame after setting isWalkingHome to true
         {
             gameObject.SetActive(false);
+            FindObjectOfType<GameManager>().SpawnNextChild();
         }
     }
     private void OnTriggerStay(Collider other)
@@ -60,7 +61,7 @@ public class ChildBehaviour : AIBehaviour
     {
         if(other.CompareTag("Van"))
         {
-            AbductChild();
+            gameObject.SetActive(false);
         }
     }
 
@@ -70,12 +71,6 @@ public class ChildBehaviour : AIBehaviour
         _animator.ResetTrigger("Lifting");
         _animator.ResetTrigger("Walking");
         _animator.SetTrigger("Idle");
-    }
-
-    private void AbductChild()
-    {
-        //TODO make the child disappear, play the correct sounds, etc...
-        gameObject.SetActive(false);
     }
 
     public void GoBack()
