@@ -77,15 +77,15 @@ public class HandsBehaviour : MonoBehaviour
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
 
-                rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
-                var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
+                //rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
+                //var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
 
-                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByLeftHand, candyFinalPosition);
-                dummy.transform.position = pos;
-                dummy.gameObject.SetActive(true);
+                //dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByLeftHand, candyFinalPosition);
+                //dummy.transform.position = pos;
+                //dummy.gameObject.SetActive(true);
 
-                //candyGrabbedByLeftHand.transform.position = candyFinalPosition;
-                //candyGrabbedByLeftHand.gameObject.SetActive(true);
+                candyGrabbedByLeftHand.transform.position = candyFinalPosition;
+                candyGrabbedByLeftHand.gameObject.SetActive(true);
                 candyGrabbedByLeftHand = null;
 
                 if (handGrabbing == HandGrabbing.Left)
@@ -124,15 +124,15 @@ public class HandsBehaviour : MonoBehaviour
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
 
-                rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
-                var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
+                //rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
+                //var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
 
-                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByRightHand, candyFinalPosition);
-                dummy.transform.position = pos;
-                dummy.gameObject.SetActive(true);
+                //dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByRightHand, candyFinalPosition);
+                //dummy.transform.position = pos;
+                //dummy.gameObject.SetActive(true);
 
-                //candyGrabbedByRightHand.transform.position = candyFinalPosition;
-                //candyGrabbedByRightHand.gameObject.SetActive(true);
+                candyGrabbedByRightHand.transform.position = candyFinalPosition;
+                candyGrabbedByRightHand.gameObject.SetActive(true);
                 candyGrabbedByRightHand = null;
 
                 if (handGrabbing == HandGrabbing.Right)

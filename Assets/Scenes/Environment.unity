@@ -3547,7 +3547,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c4b2bfeb95e16b844bd28e9ad5e8ba69, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4136,6 +4136,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1730201311068321027, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730201311068321027, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352217026862531297, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508801716893800982, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: maxTimeToCatchNextChild
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2508801716893800982, guid: fa5207c2b20dd264ca1600c62174dfc7,
         type: 3}
       propertyPath: spawnPoints.Array.data[0]
@@ -4166,6 +4186,16 @@ PrefabInstance:
       propertyPath: dummyCandy
       value: 
       objectReference: {fileID: 1858502436}
+    - target: {fileID: 3896593854234172680, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896593854234172680, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4234458095228926153, guid: fa5207c2b20dd264ca1600c62174dfc7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4214,6 +4244,11 @@ PrefabInstance:
     - target: {fileID: 4234458095228926153, guid: fa5207c2b20dd264ca1600c62174dfc7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656898611674203006, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

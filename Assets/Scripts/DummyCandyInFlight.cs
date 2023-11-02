@@ -49,10 +49,10 @@ public class DummyCandyInFlight : MonoBehaviour
     //}
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        candyToPlace.transform.position = candyFinalPosition;
-        candyToPlace.gameObject.SetActive(true);
-        Disable();
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    candyToPlace.transform.position = candyFinalPosition;
+    //    candyToPlace.gameObject.SetActive(true);
+    //    Disable();
+    //}
 }
