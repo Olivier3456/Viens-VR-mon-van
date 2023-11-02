@@ -19,8 +19,8 @@ TagManager:
   - Environment
   - NPC
   - Candy
-  - 
-  - 
+  - DummyCandy
+  - ThrowingRaycast
   - 
   - 
   - 
