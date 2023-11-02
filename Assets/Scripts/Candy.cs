@@ -16,8 +16,7 @@ public class Candy : MonoBehaviour
         this.lifeTime = lifeTime;
     }
 
-
-    public void RestartLifeCycle()
+    private void OnEnable()
     {
         Invoke("ReturnToPool", lifeTime);
     }
@@ -31,5 +30,4 @@ public class Candy : MonoBehaviour
     {
         return type;
     }
-
 }

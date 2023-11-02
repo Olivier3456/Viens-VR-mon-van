@@ -77,8 +77,15 @@ public class HandsBehaviour : MonoBehaviour
 
                 Vector3 candyFinalPosition = rayInteractor.rayEndPoint;
 
-                candyGrabbedByLeftHand.transform.position = candyFinalPosition;
-                candyGrabbedByLeftHand.gameObject.SetActive(true);
+                rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
+                var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
+
+                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByLeftHand, candyFinalPosition);
+                dummy.transform.position = pos;
+                dummy.gameObject.SetActive(true);
+
+                //candyGrabbedByLeftHand.transform.position = candyFinalPosition;
+                //candyGrabbedByLeftHand.gameObject.SetActive(true);
                 candyGrabbedByLeftHand = null;
 
                 if (handGrabbing == HandGrabbing.Left)
@@ -95,7 +102,6 @@ public class HandsBehaviour : MonoBehaviour
 
                 leftHandDirect.SetActive(true);
                 leftHandRay.SetActive(false);
-
             }
         }
     }
@@ -121,12 +127,12 @@ public class HandsBehaviour : MonoBehaviour
                 rayInteractor.GetLineOriginAndDirection(out var pos, out var dir);
                 var dummy = dummyCandy.GetComponent<DummyCandyInFlight>();
 
-                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByRightHand.GetCandyType());
+                dummy.SetDummyCandyParameters(rayInteractor.velocity, dir, candyGrabbedByRightHand, candyFinalPosition);
                 dummy.transform.position = pos;
                 dummy.gameObject.SetActive(true);
 
-                candyGrabbedByRightHand.transform.position = candyFinalPosition;
-                candyGrabbedByRightHand.gameObject.SetActive(true);
+                //candyGrabbedByRightHand.transform.position = candyFinalPosition;
+                //candyGrabbedByRightHand.gameObject.SetActive(true);
                 candyGrabbedByRightHand = null;
 
                 if (handGrabbing == HandGrabbing.Right)
@@ -144,7 +150,6 @@ public class HandsBehaviour : MonoBehaviour
 
                 rightHandDirect.SetActive(true);
                 rightHandRay.SetActive(false);
-                
             }
         }
     }

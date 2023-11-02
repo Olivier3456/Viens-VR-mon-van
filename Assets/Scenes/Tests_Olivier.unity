@@ -669,6 +669,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2508801716893800982, guid: fa5207c2b20dd264ca1600c62174dfc7,
+        type: 3}
+      propertyPath: maxTimeToCatchNextChild
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2918655071911938047, guid: fa5207c2b20dd264ca1600c62174dfc7,
         type: 3}
       propertyPath: m_Name

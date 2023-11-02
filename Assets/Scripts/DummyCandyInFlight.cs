@@ -10,11 +10,18 @@ public class DummyCandyInFlight : MonoBehaviour
     private Candy.CandyType type;
     [SerializeField]
     private GameObject[] candyTypes;
-    public void SetDummyCandyParameters(float v, Vector3 dir, Candy.CandyType t)
+    [SerializeField] CandyPool candyPool;
+
+    private Candy candyToPlace;
+    private Vector3 candyFinalPosition;
+
+    public void SetDummyCandyParameters(float v, Vector3 dir, Candy realCandyToPlace, Vector3 realCandyFinalPosition)
     {
         velocity = v;
         direction = dir;
-        type = t;
+        candyToPlace = realCandyToPlace;
+        type = candyToPlace.GetCandyType();
+        candyFinalPosition = realCandyFinalPosition;
     }
     void OnEnable()
     {
@@ -24,7 +31,7 @@ public class DummyCandyInFlight : MonoBehaviour
             candyTypes[1].SetActive(true);
         rb = GetComponent<Rigidbody>();
         rb.velocity = direction * velocity;
-        Invoke("Disable", 1);
+        //Invoke("Disable", 1);
     }
 
     private void Disable()
@@ -34,4 +41,18 @@ public class DummyCandyInFlight : MonoBehaviour
         candyTypes[1].SetActive(false);
     }
 
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //        candyToPlace.transform.position = candyFinalPosition;
+    //        candyToPlace.gameObject.SetActive(true);
+    //        Disable();
+    //}
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        candyToPlace.transform.position = candyFinalPosition;
+        candyToPlace.gameObject.SetActive(true);
+        Disable();
+    }
 }
