@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VanBehaviour : MonoBehaviour
 {
+    [SerializeField] GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,9 @@ public class VanBehaviour : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Girl"))
+        {
             GetComponent<AudioSource>().Play();
+            gameManager.ChildCaught();
+        }
     }
 }

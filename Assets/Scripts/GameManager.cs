@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timeReductionFactorBetweenTwoChildrenCaught = 0.075f;
     [SerializeField] private TimerVisual timerVisual;
     [SerializeField] private GameOverMenu gameOverMenu;
+    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private GameObject girlPrefab;
 
     private float timer;
 
@@ -53,8 +55,13 @@ public class GameManager : MonoBehaviour
         timer = 0;
         maxTimeToCatchNextChild -= maxTimeToCatchNextChild * timeReductionFactorBetweenTwoChildrenCaught;
         //OnChildCaught?.Invoke(this, EventArgs.Empty);
+        SpawnNextChild();
     }
 
+    public void SpawnNextChild()
+    {
+        Instantiate(girlPrefab, spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)].position, Quaternion.identity) ;
+    }
     public void PlayerCaughtByPolice()
     {
 
